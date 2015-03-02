@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xs:schema 
+targetNamespace="http://com.dto.messages/"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:message="http://com.dto.messages/"
+>
+
+<xs:element name="note">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="too" type="xs:string" minOccurs="2" maxOccurs="2"/>
+      <xs:element name="from" type="xs:date"/>
+      <xs:element name="heading" type="xs:string"/>
+      <xs:element nillable="true" name="body" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
